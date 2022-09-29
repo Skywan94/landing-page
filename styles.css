@@ -1,0 +1,24 @@
+.body {
+    margin:0px;
+}
+
+.header {
+    display:flex;
+    color: white;
+    background-color: rgb(52, 66, 82);
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 15px;
+    
+}
+
+#header-logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#header-links {
+    display:flex;
+    font-size:16px;
+    gap: 16px;
+}
