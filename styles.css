@@ -1,14 +1,6 @@
 .main {
     margin:0px;
-    /*min-width: min-content;*/
-    /*max-width: fit-content;*/
-    /*width: 1360px;*/
     width:fit-content;
-    /*margin: 0px 230px;*/
-    /*align-content: center;*/
-    /*padding-left: auto;
-    padding-right: auto;*/
-    /*align-items: center;*/
 }
 
 .header {
@@ -16,17 +8,18 @@
     color: white;
     background-color: rgb(52, 66, 82);
     justify-content: space-between;
-    /*justify-content: center;*/
-    /*width: fit-content;*/
     max-width:960px;
-    /*padding: 15px 200px 15px 200px;*/
+
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .header #logo {
     font-size: 26px;
     font-weight: bold;
 
-    align-items: center; 
+    align-items: center;
+    padding-left: 10px; 
 }
 
 .header #links {
@@ -36,34 +29,34 @@
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
+
+    padding-right: 10px;
 }
 
 .main .block01 {
     display: flex;
-    /*align-items: center;*/
     justify-content: center;
-    /*gap: 50px;*/
+    gap: 20px;
     color: white;
     background-color: rgb(52, 66, 82);
-    /*padding: 100px 200px 100px 200px;*/
-    /*max-height: 270px;*/
-    /*width: 960px;*/
+
     flex-wrap: wrap-reverse;
     width: fit-content;
     max-width: 960px;
     height: fit-content;
-    /*margin-left: auto;
-    margin-right: auto;*/
+   
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .main .block01 .content {
-   display:flex;
-   flex-direction: column;
-   gap: 25px;
-   align-items: flex-start;
-   justify-content: space-between;
-   max-height: 270px;
-   max-width: 480px;
+    display:flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-height: 270px;
+    max-width: 460px;
 }
 
 .main .block01 #title {
@@ -77,95 +70,114 @@
 .main .block01 #text {
     font-size: 20px;
     display: flex;
-    margin: 0px;   
+
+    margin: 0px;  
 }
 
 .main .block01 #link {
     font-size: 18px;
     font-weight: bold;
-
-    /*display:flex;*/
-    /*align-items: flex-start;*/
     background-color: rgb(0, 140, 255);
-    border-radius: 7px;
     width:fit-content;
     height:fit-content;
+
     padding: 7px 28px;  
+
+    border-radius: 7px;
 }
 
-.main .block01 #pic{
+.main .block01 #pic {
     display: flex;
     max-height: 270px;
     /*max-width: 480px;*/         /*test pic scaling*/
+
     margin: 0px;
 }
 
 
 .main .block02 {                  
-    /*display:none;*/
     display: flex;
-    /*flex-direction: column;*/
-    /*justify-content: space-around;*/
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
-    /*width: 960px;*/
-    /*height: min-content;*/
-    /*width: fit-content;*/
+    gap: 70px;
     max-width: 960px;
+
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 
 .main .block02 #title {
-    flex:1;
-    margin: 0px;
+    font-size: 26px;
     text-align: center;
+
+    flex:1;
     align-items: center;
     width: fit-content;
     height: fit-content;
+
+    margin: 0px;
 }
 
 .main .block02 #list {
-    flex:1;
+    display:flex;
+    flex-direction: row;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
+    gap: 100px;
     flex-wrap: wrap;
     text-align: center;
     min-width: fit-content;
     min-height: fit-content;
-    /*align-items: center;*/
+
+    padding: 0;
+    margin: 0;
+}  
+
+.main .block02 #pic {
+    border-style: double;
+    border-width: 6px;
+    border-color: rgba(0, 0, 0, 0.171);
 }
 
+#subtext {
+    display:flex;
+    font-size: 16px;
+    font-weight: 800;
+    max-width: fit-content;
+}
 
 .main .block03 {
     display: block;
     background-color: rgb(221, 226, 241);
-    /*padding: 80px 260px 60px 260px;  */
     justify-content: center;
-    /*width: 960px;*/
     width:fit-content;
     max-width: 960px;
 
-   /* padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left:15%;
-    padding-right: auto;*/
+    padding-top: 80px;
+    padding-bottom: 60px;  
 }
 
 .main .block03 #text {
-    font-size: 38px;
+    font-size: 36px;
     font-style: italic;
     font-weight: 100;
     justify-items: center;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
     margin: 0px;
-    /*padding: 40px 120px 25px 100px;*/
-    /*padding: 50px 0px;*/
 }
 
 .main .block03 #footer {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 24px;
     text-align: right;
-    padding: 0px 45px 12px 0px;
+
+    padding: 0px 40px 0px 0px;
+
     margin: 0px;
 }
 
@@ -173,18 +185,18 @@
     display: flex;
     color: white;
     background-color: rgb(0, 140, 255);
-    /*padding: 50px 100px;*/
     align-items: center;
     max-width: fit-content;
-    justify-content: space-between;
-    gap: 150px;
-    border-radius: 7px;
-    /*width: 960px;*/
+    gap: 130px;
+
+    padding: 45px 45px;
+
+    border-radius: 20px;
 
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 100px; 
 }
 
 .main .block04 .content #title {
@@ -207,7 +219,7 @@
     
     white-space: nowrap;          /*forced because no idea*/
     width: max-content;
-    /*height: 12px;*/
+    
     padding: 7px 28px;
     margin: 0px;
 
@@ -221,13 +233,13 @@
 .main .footer {
     font-size: 18px;
     font-weight: 400;
-
     text-align: center;
+
     color: white;
     background-color: rgb(52, 66, 82);
-    padding: 40px 0px; 
-    /*width: fit-content; */
     max-width: 960px;
+
+    padding: 30px 0px; 
 }
 
 
