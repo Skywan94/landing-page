@@ -1,11 +1,14 @@
 .main {
-    /*margin:0px;*/
+    margin:0px;
     /*min-width: min-content;*/
     /*max-width: fit-content;*/
-    width: 1360px;
+    /*width: 1360px;*/
+    width:fit-content;
     /*margin: 0px 230px;*/
-    margin: 0px;
-    align-self: center;
+    /*align-content: center;*/
+    /*padding-left: auto;
+    padding-right: auto;*/
+    /*align-items: center;*/
 }
 
 .header {
@@ -13,7 +16,10 @@
     color: white;
     background-color: rgb(52, 66, 82);
     justify-content: space-between;
-    padding: 15px 200px 15px 200px;
+    /*justify-content: center;*/
+    /*width: fit-content;*/
+    max-width:960px;
+    /*padding: 15px 200px 15px 200px;*/
 }
 
 .header #logo {
@@ -27,6 +33,7 @@
     font-size:18px;
 
     display:flex;
+    justify-content: flex-end;
     align-items: center;
     gap: 20px;
 }
@@ -34,20 +41,29 @@
 .main .block01 {
     display: flex;
     /*align-items: center;*/
-    gap: 50px;
+    justify-content: center;
+    /*gap: 50px;*/
     color: white;
     background-color: rgb(52, 66, 82);
-    padding: 100px 200px 100px 200px;
-    max-height: 270px;
-    width: 960px;
+    /*padding: 100px 200px 100px 200px;*/
+    /*max-height: 270px;*/
+    /*width: 960px;*/
+    flex-wrap: wrap-reverse;
+    width: fit-content;
+    max-width: 960px;
+    height: fit-content;
+    /*margin-left: auto;
+    margin-right: auto;*/
 }
 
 .main .block01 .content {
    display:flex;
    flex-direction: column;
-   /*gap: 25px;*/
+   gap: 25px;
    align-items: flex-start;
    justify-content: space-between;
+   max-height: 270px;
+   max-width: 480px;
 }
 
 .main .block01 #title {
@@ -60,7 +76,6 @@
 
 .main .block01 #text {
     font-size: 20px;
-
     display: flex;
     margin: 0px;   
 }
@@ -69,8 +84,8 @@
     font-size: 18px;
     font-weight: bold;
 
-    display:flex;
-    align-items: flex-start;
+    /*display:flex;*/
+    /*align-items: flex-start;*/
     background-color: rgb(0, 140, 255);
     border-radius: 7px;
     width:fit-content;
@@ -81,46 +96,76 @@
 .main .block01 #pic{
     display: flex;
     max-height: 270px;
+    /*max-width: 480px;*/         /*test pic scaling*/
     margin: 0px;
 }
 
 
-.main .block02 {
+.main .block02 {                  
+    /*display:none;*/
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    /*flex-direction: column;*/
+    /*justify-content: space-around;*/
+    flex-wrap: wrap;
+    /*width: 960px;*/
+    /*height: min-content;*/
+    /*width: fit-content;*/
+    max-width: 960px;
 }
 
 
 .main .block02 #title {
-    display:flex;
+    flex:1;
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
 }
 
 .main .block02 #list {
-    display:flex;
+    flex:1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    text-align: center;
+    min-width: fit-content;
+    min-height: fit-content;
+    /*align-items: center;*/
 }
 
 
 .main .block03 {
     display: block;
     background-color: rgb(221, 226, 241);
-    padding: 110px 260px 90px 260px;   
+    /*padding: 80px 260px 60px 260px;  */
+    justify-content: center;
+    /*width: 960px;*/
+    width:fit-content;
+    max-width: 960px;
+
+   /* padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left:15%;
+    padding-right: auto;*/
 }
 
 .main .block03 #text {
-    font-size: 40px;
+    font-size: 38px;
     font-style: italic;
     font-weight: 100;
-    
     justify-items: center;
     margin: 0px;
+    /*padding: 40px 120px 25px 100px;*/
+    /*padding: 50px 0px;*/
 }
 
 .main .block03 #footer {
     font-weight: 700;
     font-size: 24px;
     text-align: right;
-    padding-right: 40px;
+    padding: 0px 45px 12px 0px;
     margin: 0px;
 }
 
@@ -128,13 +173,13 @@
     display: flex;
     color: white;
     background-color: rgb(0, 140, 255);
-    padding: 50px 100px;
+    /*padding: 50px 100px;*/
     align-items: center;
-    width: fit-content;
-    height: fit-content;
+    max-width: fit-content;
     justify-content: space-between;
     gap: 150px;
     border-radius: 7px;
+    /*width: 960px;*/
 
     margin-left: auto;
     margin-right: auto;
@@ -160,8 +205,11 @@
     font-size: 18px;
     font-weight: bold;
     
+    white-space: nowrap;          /*forced because no idea*/
+    width: max-content;
+    /*height: 12px;*/
     padding: 7px 28px;
-    margin:0px;
+    margin: 0px;
 
     border: 8px;
     border-color: white;
@@ -177,7 +225,9 @@
     text-align: center;
     color: white;
     background-color: rgb(52, 66, 82);
-    padding: 40px 0px;    
+    padding: 40px 0px; 
+    /*width: fit-content; */
+    max-width: 960px;
 }
 
 
