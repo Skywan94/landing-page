@@ -1,14 +1,14 @@
 .main {
     margin:0px;
-    width:fit-content;
 }
 
 .header {
     display:flex;
+
     color: white;
     background-color: rgb(52, 66, 82);
     justify-content: space-between;
-    max-width:960px;
+    /*max-width:960px;*/
 
     padding-top: 10px;
     padding-bottom: 10px;
@@ -23,9 +23,10 @@
 }
 
 .header #links {
+    display:flex;
+
     font-size:18px;
 
-    display:flex;
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
@@ -35,14 +36,12 @@
 
 .main .block01 {
     display: flex;
+
     justify-content: center;
     gap: 20px;
     color: white;
     background-color: rgb(52, 66, 82);
-
     flex-wrap: wrap-reverse;
-    width: fit-content;
-    max-width: 960px;
     height: fit-content;
    
     padding-top: 70px;
@@ -51,6 +50,7 @@
 
 .main .block01 .content {
     display:flex;
+
     flex-direction: column;
     gap: 25px;
     align-items: flex-start;
@@ -64,6 +64,7 @@
     font-weight: 800;
 
     display: flex;
+
     margin: 0px;  
 }
 
@@ -101,15 +102,17 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 70px;
-    max-width: 960px;
 
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 .main .block02 #title {
-    font-size: 26px;
+    font-size: 28px;
+    font-weight: 600;
     text-align: center;
 
     flex:1;
@@ -139,6 +142,7 @@
     border-style: double;
     border-width: 6px;
     border-color: rgba(0, 0, 0, 0.171);
+    border-radius: 15px;
 }
 
 #subtext {
@@ -151,33 +155,32 @@
 .main .block03 {
     display: block;
     background-color: rgb(221, 226, 241);
-    justify-content: center;
-    width:fit-content;
+
+    padding: 70px 15px 60px 15px;
+}
+
+.main .block03 .content {
     max-width: 960px;
 
-    padding-top: 80px;
-    padding-bottom: 60px;  
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main .block03 #text {
-    font-size: 36px;
-    font-style: italic;
+    font-size: 30px;
     font-weight: 100;
-    justify-items: center;
-
-    padding-left: 15px;
-    padding-right: 15px;
+    font-style: italic;
+    justify-content: center; 
 
     margin: 0px;
 }
 
 .main .block03 #footer {
-    font-weight: 600;
     font-size: 24px;
-    text-align: right;
+    font-weight: 700;
+    text-align: end;
 
-    padding: 0px 40px 0px 0px;
-
+    padding-right: 50px;
     margin: 0px;
 }
 
@@ -195,8 +198,8 @@
 
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 100px; 
+    margin-top: 80px;
+    margin-bottom: 80px; 
 }
 
 .main .block04 .content #title {
@@ -237,9 +240,6 @@
 
     color: white;
     background-color: rgb(52, 66, 82);
-    max-width: 960px;
 
-    padding: 30px 0px; 
+    padding: 30px 0px;
 }
-
-
